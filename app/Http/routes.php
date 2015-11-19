@@ -122,7 +122,36 @@ Route::group(['prefix'=> 'admin', 'middleware' => 'auth', 'where'=>['id'=>'[0-9]
         });
     });
 
+    Route::group(['prefix' => 'quemsomos'],function(){
+
+        Route::get('/',['as'=>'quemsomos', 'uses' => 'TextoController@index']);
+        Route::post('/',['as'=>'quemsomos.store','uses'=> 'TextoController@store']);
+        Route::get('create',['as'=>'quemsomos.create','uses'=>'TextoController@create']);
+        Route::get('{id}/destroy',['as'=>'quemsomos.destroy','uses'=>'TextoController@destroy']);
+        Route::get('{id}/edit',['as'=>'quemsomos.edit','uses'=>'TextoController@edit']);
+        Route::put('{id}/update',['as'=>'quemsomos.update','uses'=>'TextoController@update']);
+    });
+    Route::group(['prefix'=>'banner'],function(){
+        Route::get('/',['as'=>'banner', 'uses' => 'BannerImageController@index']);
+        Route::post('/',['as'=>'banner.store','uses'=> 'BannerImageController@storeImage']);
+        Route::get('create',['as'=>'banner.create','uses'=>'BannerImageController@createImage']);
+        Route::get('{id}/destroy',['as'=>'banner.destroy','uses'=>'BannerImageController@destroy']);
+        Route::get('{id}/edit',['as'=>'banner.edit','uses'=>'BannerImageController@edit']);
+        Route::put('{id}/update',['as'=>'banner.update','uses'=>'BannerImageController@update']);
+    });
+
+    Route::group(['prefix'=>'provider'],function(){
+        Route::get('/',['as'=>'provider', 'uses' => 'ProviderImageController@index']);
+        Route::post('/',['as'=>'provider.store','uses'=> 'ProviderImageController@storeImage']);
+        Route::get('create',['as'=>'provider.create','uses'=>'ProviderImageController@createImage']);
+        Route::get('{id}/destroy',['as'=>'provider.destroy','uses'=>'ProviderImageController@destroy']);
+        Route::get('{id}/edit',['as'=>'provider.edit','uses'=>'ProviderImageController@edit']);
+        Route::put('{id}/update',['as'=>'provider.update','uses'=>'ProviderImageController@update']);
+    });
+
+
 });
+
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

@@ -129,7 +129,7 @@ a:hover,a:focus{
 /* css breadcrumb */
 #breadcrumb{
     border-bottom: 1px solid #dcdcdc;
-
+    background-color: #F7F4EC;
 
 }
 
@@ -160,7 +160,7 @@ a:hover,a:focus{
 
 
 #breadcrumb .breadcrumb{
-    background: #fff;
+
     padding: 8px 15px;
     margin-bottom: 15px;
     list-style: none;
@@ -168,6 +168,7 @@ a:hover,a:focus{
     border-radius: 4px;
     margin-top: 13px;
     height: auto;
+    background-color: #F7F4EC;
 
 }
 
@@ -293,12 +294,12 @@ header > .row > .container > #options > .item > a > span{
 
 
 .navbar-default .navbar-toggle{
-    border-color: #fff;
+    border-color: #000;
 
 }
 
 .navbar-default .navbar-toggle .icon-bar{
-    background-color: #fff;
+    background-color: #000;
 
 }
 
@@ -367,10 +368,10 @@ header > .row > .container > #options > .form > form > button{
 #menu{
     width: 100%;
     min-height: 45px;
-    background-color: #d80000;
+    background-color: #fff;
     border-top: 1px solid #f00;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    font-weight: bold;
+
 
 }
 .headerTamanhoFixo{
@@ -385,21 +386,19 @@ header > .row > .container > #options > .form > form > button{
 
 #menu-hover li a{
     display: block;
-    background: none;
     width: 100%;
-    color: #fff;
-    padding: 0px 0 12px 0;
-    padding-left: 0.9375em;
+    color: #bf392b;
     font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     font-size: 1.2em;
     font-weight: normal;
-    text-transform: none;
-    color: #fff;
+    text-transform: none
+
 }
 
 
 #menu-hover li a:hover{
-    color:  #FBE300;
+    color:  #C0392B;
+    background-color: #E0E1E3;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
@@ -414,7 +413,7 @@ header > .row > .container > #options > .form > form > button{
 }
 
 #menu-dropdown-list{
-    background-color: #D80000;
+    background-color: #fff;
     margin-top: -2px;
 }
 
@@ -593,7 +592,7 @@ header > .row > .container > #options > .form > form > button{
 
 
 #newsletter{
-    min-height: 40%;
+    min-height: 300px;
     background-color: #c0392b;
     color: #fff;
     padding: 3rem 0;
@@ -606,7 +605,7 @@ header > .row > .container > #options > .form > form > button{
     color: #fff;
     font-size: 2.5em;
     font-weight: 400;
-    padding-top: 2rem;
+
 
 }
 
@@ -906,7 +905,6 @@ footer{
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #f5f5f5;
     border-radius: 4px;
 
 

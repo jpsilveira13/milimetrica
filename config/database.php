@@ -55,9 +55,9 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'u837904727_mili'),
-            'username'  => env('DB_USERNAME', 'u837904727_mili'),
-            'password'  => env('DB_PASSWORD', 'mili200*'),
+            'database'  => env('DB_DATABASE', 'milimetrica'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', 'malandro123'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

@@ -1,6 +1,8 @@
 @extends('site.header')
 
 @section('content')
+
+
     <section id="breadcrumb">
         <div class="row">
             <div class="container">
@@ -23,10 +25,11 @@
     <div class="container">
         <div class="col-lg-12 value-style">
             <p>
-                A Milimétrica se renova diariamente para ser uma referência em qualidade, não só de seus produtos, mas também de atendimento, com uma equipe dedicada, motivada e altamente profissional, pronta para oferecer sempre as melhores opções e fechar os melhores negócios.
+                {{$quem_somos->quem_somos}}
+                <!--A Milimétrica se renova diariamente para ser uma referência em qualidade, não só de seus produtos, mas também de atendimento, com uma equipe dedicada, motivada e altamente profissional, pronta para oferecer sempre as melhores opções e fechar os melhores negócios.
             </p>
             <p>
-                O mix de produtos da Milimétrica estão cada vez mais diversificado, repleto de novidades, lançamentos, as melhores marcas em produtos para construção, reforma, ferramentas e utilidades para o lar e os melhores preços do mercado, com muitas facilidades e vários planos de pagamento. Venha conferir, a Milimétrica tem tudo para sua casa.
+                O mix de produtos da Milimétrica estão cada vez mais diversificado, repleto de novidades, lançamentos, as melhores marcas em produtos para construção, reforma, ferramentas e utilidades para o lar e os melhores preços do mercado, com muitas facilidades e vários planos de pagamento. Venha conferir, a Milimétrica tem tudo para sua casa. -->
             </p>
         </div>
         <div class="col-lg-12">
@@ -41,7 +44,8 @@
 
             </div>
             <p>
-                Oferecer às famílias a melhor solução para construir e reformar seus lares.
+                {{$quem_somos->missao}}
+               <!-- Oferecer às famílias a melhor solução para construir e reformar seus lares.-->
             </p>
         </div>
         <div class="col-lg-12">
@@ -54,7 +58,8 @@
                 <h2>Visão</h2>
             </div>
             <i class="fa fa-reply"></i>
-            <span> Ser a primeira escolha no varejo de materiais de construção, oferecendo aos nossos clientes produtos e serviços de qualidade, com atendimento diferenciado na orientação técnica e funcional, gerando relacionamentos duradouros em um ambiente de conforto, segurança e conveniência.</span>
+            <span> {{$quem_somos->visao}} <!-- Ser a primeira escolha no varejo de materiais de construção, oferecendo aos nossos clientes produtos e serviços de qualidade, com atendimento diferenciado na orientação técnica e funcional, gerando relacionamentos duradouros em um ambiente de conforto, segurança e conveniência. -->
+            </span>
             <br />
             <i class="fa fa-reply"></i>
             <span>Capacitar e desenvolver nossos profissionais.</span><br />
@@ -73,6 +78,7 @@
 
             </div>
             <div class="col-lg-6 no-padding-left">
+                <span>{{$quem_somos->valores}}</span>
                 <i class="fa fa-reply"></i>
                 <span> Compromisso profissional</span><br />
                 <i class="fa fa-reply"></i>

@@ -24,16 +24,10 @@ class CategoryRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'required|min:5',
+            'tomanoseucu' => ''
 
         ];
     }
 
-    public function messages(){
-        return[
-            'name.required' => "Nome da categoria não pode está vazio",
-            'name.min' => "Nome tem que ter mais de 5 caracteres"
-        ];
 
-    }
 }

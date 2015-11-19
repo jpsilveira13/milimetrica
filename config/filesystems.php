@@ -52,6 +52,15 @@ return [
             'root'   => base_path().'/public_html/uploads'
         ],
 
+        'public_banner' => [
+            'driver' => 'local',
+            'root'   => base_path().'/banner'
+        ],
+        'public_provider' => [
+            'driver' => 'local',
+            'root'   => base_path().'/provider'
+        ],
+
 
         'ftp' => [
             'driver'   => 'ftp',

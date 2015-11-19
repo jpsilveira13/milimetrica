@@ -21,8 +21,8 @@ class Products extends Migration
             $table->decimal('price-old');
             $table->string('url_image');
             $table->boolean('featured');
-            $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('product_categories')->onDelete('cascade');
+            $table->integer('category_id')->unsigned()->nullabe();
+            $table->foreign('category_id')->references('id')->on('product_categories');
             $table->timestamps();
         });
     }
